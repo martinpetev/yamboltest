@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html>
 
@@ -40,4 +41,67 @@
 
    </body>
 	
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar img {
+  width: 90%;
+  border: 1px solid;
+  margin-bottom: 5px;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+</style>
+</head>
+<body>
+ <script type="text/javascript">
+   		function setBook(bookIndex) {
+   			var bookElement = document.getElementById('bookcontent');
+   			bookElement.src = bookIndex + '/book.html';
+   		}
+</script>
+<div class="sidebar">
+  	<img src="1/files/thumb/1.jpg" onclick="javascript:setBook(1);"/> 
+	<img src="2/files/thumb/1.jpg" onclick="javascript:setBook(2);"/>
+	<img src="3/files/thumb/1.jpg" onclick="javascript:setBook(3);"/> 
+	<img src="4/files/thumb/1.jpg" onclick="javascript:setBook(4);"/> 
+	<img src="5/files/thumb/1.jpg" onclick="javascript:setBook(5);"/> 
+	<img src="6/files/thumb/1.jpg" onclick="javascript:setBook(6);"/> 
+	<img src="7/files/thumb/1.jpg" onclick="javascript:setBook(7);"/> 
+	<img src="8/files/thumb/1.jpg" onclick="javascript:setBook(8);"/> 
+	<img src="9/files/thumb/1.jpg" onclick="javascript:setBook(9);"/> 
+	<img src="10/files/thumb/1.jpg" onclick="javascript:setBook(10);"/> 
+</div>
+
+<div class="content">
+  <iframe id="bookcontent" align="left" src= "1/book.html" width="80%" height="80%" />
+
+</div>
+
+</body>
 </html>
